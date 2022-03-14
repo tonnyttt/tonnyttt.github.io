@@ -1,0 +1,343 @@
+.discs {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    width: 200px;
+    margin: auto;
+    color: rgba(0, 0, 0, .87);
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+}
+
+.discs__logo {
+    width: 30px;
+    margin-right: 3px;
+}
+
+.descriptions {
+    margin: 30px auto;
+    color: rgba(0, 0, 0, .77);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.help {
+    font-weight: 500;
+    color: #1b2740;
+}
+
+.help__item {
+    text-decoration: none;
+    color: #fe696a;
+    font-weight: 600;
+    border: dashed 1px #fe696a;
+    padding: 3px 7px;
+    border-radius: 5px;
+    margin-left: 5px;
+    transition: var(--transition);
+}
+
+.help__item:hover {
+    opacity: 0.8;
+    transition: var(--transition);
+}
+
+.city {
+    margin-top: 30px;
+    color: #616161;
+    font-size: 14px;
+}
+
+.city__item {
+    color: #fe696a;
+    text-decoration: none;
+    border-bottom: dashed 1px #fe696a;
+    font-weight: 600;
+}
+*{
+    box-sizing: border-box;
+  }
+  section{
+    width: 80%;
+    margin: 2% 10% 2% 10%;
+    display: flex;
+    border: 15px solid #233c7d;
+    border-radius: 25px;
+    
+   
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 80px 200px 80px 200px;
+  }
+  section h2{
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin: 0% 0% 5% 0%;
+    font-size: 30px;
+  }
+  .card{
+    width: 33.333333%;
+  }
+  
+  
+  
+  /*Estilo C*/
+  .estilo-c{
+    font-family: sans-serif;
+    width: 30%;
+    border-color: #fbcb00 ;
+    
+  }
+  .estilo-c .img-container{
+    overflow: hidden;
+    height: 350px;
+    position: relative;
+    border: 5px solid #fbcb00;
+    
+  
+    border-radius: 25px;
+    
+  }
+  .estilo-c .img-container img{
+    width: 105%;
+    position: absolute;
+    top: -0%;
+    transition: all 0.5s;
+  }
+  .estilo-c:hover .img-container img{
+    transform: scale(1.2);
+  }
+  .estilo-c .img-container .promo{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 20px;
+    background: #233c7d;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  .estilo-c .info-container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  .estilo-c .info-container h3{
+    margin: 0;
+  }
+  .estilo-c .info-container h3,
+  .estilo-c .info-container strong,
+  .estilo-c .info-container span{
+    padding: 5px 15px;
+    width: 100%;
+  }
+  .estilo-c .add-cart{
+    margin-top: 2px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: #fbcb00;
+    padding: 15px;
+    border: 1px solid #233c7d;
+    border-radius: 25px;
+  }
+  .estilo-c .add-cart:hover{
+    color: black;
+    background-color: transparent;
+    border: 1px solid #233c7d;
+  }
+  @media (max-width: 1199.98px) {
+    .header,
+    .container--post,
+    .footer {
+        width: calc(85% - 16px);
+    }
+    .suscribe__form {
+        width: 50%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .header,
+    .container--post,
+    .footer {
+        width: calc(90% - 16px);
+    }
+    .suscribe__form {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header,
+    .container--post,
+    .footer {
+        width: calc(100% - 16px);
+    }
+    .suscribe__form {
+        width: 70%;
+    }
+    .content--main {
+        flex-direction: column;
+    }
+    .aside {
+        padding-left: 0;
+    }
+    .aside__buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .aside__buttons--btn {
+        margin-bottom: 0;
+        margin: 5px;
+    }
+    .post__descriptions {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: var(--transition);
+    }
+}
+
+@media (max-width: 576px) {
+    .header,
+    .container--post,
+    .footer {
+        width: calc(100% - 16px);
+    }
+    .suscribe__form {
+        width: 100%;
+    }
+    .content--main {
+        flex-direction: column;
+    }
+    .aside {
+        padding-left: 0;
+    }
+    .aside__buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .aside__buttons--btn {
+        margin-bottom: 0;
+        margin: 5px;
+    }
+    .post__descriptions {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: var(--transition);
+    }
+}
+@media (max-width: 1199.98px) {
+  .header,
+  .container--post,
+  .footer {
+      width: calc(85% - 16px);
+  }
+  .suscribe__form {
+      width: 50%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .header,
+  .container--post,
+  .footer {
+      width: calc(90% - 16px);
+  }
+  .suscribe__form {
+      width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header,
+  .container--post,
+  .footer {
+      width: calc(100% - 16px);
+  }
+  .suscribe__form {
+      width: 70%;
+  }
+  .content--main {
+      flex-direction: column;
+  }
+  .aside {
+      padding-left: 0;
+  }
+  .aside__buttons {
+      flex-direction: row;
+      justify-content: center;
+  }
+  .aside__buttons--btn {
+      margin-bottom: 0;
+      margin: 5px;
+  }
+  .post__descriptions {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: var(--transition);
+  }
+}
+
+@media (max-width: 576px) {
+  .header,
+  .container--post,
+  .footer {
+      width: calc(100% - 16px);
+  }
+  .suscribe__form {
+      width: 100%;
+  }
+  .content--main {
+      flex-direction: column;
+  }
+  .aside {
+      padding-left: 0;
+  }
+  .aside__buttons {
+      flex-direction: row;
+      justify-content: center;
+  }
+  .aside__buttons--btn {
+      margin-bottom: 0;
+      margin: 5px;
+  }
+  .post__descriptions {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: var(--transition);
+  }
+}
+
+@media (max-width: 576px) {
+  .main,
+  .productos,
+  .footer {
+      width: calc(100% - 16px);
+  }
+  .card-estilo-c {
+      width: 100%;
+  }
+  .img-container {
+      flex-direction: column;
+  }
+  .aside {
+      padding-left: 0;
+  }
+  .aside__buttons {
+      flex-direction: row;
+      justify-content: center;
+  }
+  .aside__buttons--btn {
+      margin-bottom: 0;
+      margin: 5px;
+  }
+  .post__descriptions {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: var(--transition);
+  }
